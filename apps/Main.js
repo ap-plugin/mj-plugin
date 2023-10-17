@@ -39,7 +39,8 @@ export async function Main () {
       ServerId: Config.getConfig().server_id,
       ChannelId: Config.getConfig().channel_id,
       SalaiToken: Config.getConfig().salai_token,
-      BotId: Config.getConfig().bot_type === 'Nijijourney' ? 'NijiBot' : 'MJBot',
+      BotId:
+        Config.getConfig().bot_type === 'Nijijourney' ? 'NijiBot' : 'MJBot',
       HuggingFaceToken: Config.getConfig().huggingface_token,
       Debug: Config.getConfig().debug,
       Ws: true,
