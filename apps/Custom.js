@@ -3,7 +3,7 @@ import getPic from '../components/Proxy.js'
 import Log from '../utils/logs.js'
 
 export class Custom extends plugin {
-  constructor() {
+  constructor () {
     super({
       /** 功能名称 */
       name: 'MJ-按钮',
@@ -23,7 +23,7 @@ export class Custom extends plugin {
     })
   }
 
-  async custom(e) {
+  async custom (e) {
     if (!global.mjClient) {
       await e.reply('未连接到 Midjourney Bot，请先使用 #mj连接', true)
       return true
